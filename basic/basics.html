@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript | Basics</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script type="text/javascript" src="basics.js"></script>
+    <<br />
+    <br />
+
+    
+    <button type="button" onclick="document.write(10+4)" name="button">
+      try it
+    </button>
+
+
+ <!-- alert -->
+
+    <script>
+      window.alert("this ia an alert");
+    </script>
+
+
+
+    <button onclick="window.print()" name="button">print this page</button>
+    <p id="total"></p>
+    <script>
+      var x, y, z;
+      x = 5;
+      y = 9;
+      z = x + y;
+      document.getElementById("total").innerHTML =
+        "the value of z is" + " " + z;
+    </script>
+    <button onclick="this.innerHTML = Date()">what is the time?</button>
+
+    <p id="search"></p>
+    <script>
+      var str = "this is a string";
+      var n = str.search("string");
+      document.getElementById("search").innerHTML = n;
+    </script>
+
+    <button onclick="myreplace()">press here</button>
+    <p id="replace">visit my website google</p>
+
+    <p id="function"></p>
+    <script>
+      var hello;
+      hello = () => {
+        return "hello world";
+      };
+      document.getElementById("function").innerHTML = hello();
+    </script>
+
+    <p id="classes"></p>
+    <script>
+      class car {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+      }
+      mycar = new car("porche", 2022);
+      document.getElementById("classes").innerHTML =
+        mycar.name + " " + mycar.year;
+    </script>
+  </body>
+</html>
